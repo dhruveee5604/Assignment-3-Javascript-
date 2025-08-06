@@ -8,8 +8,10 @@ button.addEventListener('click', () => {
 
 function loadCats(count) {
   for (let i = 0; i < count; i++) {
+     // Make a GET request to The Cat API
     fetch("https://api.thecatapi.com/v1/images/search", {
       headers: {
+           // Pass the API key in the request header
         "x-api-key": "live_imx3jMJalWXYMSNOCxLRCBE38oLProoe8VEDbrlb1dVJwTWCNNBy8HyoWRq0cRR3"
       }
     })
@@ -17,6 +19,7 @@ function loadCats(count) {
     .then(data => {
       const img = document.createElement('img');
       img.src = data[0].url;
+       // Append the image to the gallery container
       gallery.appendChild(img);
     })
     .catch(err => {
