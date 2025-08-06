@@ -1,0 +1,72 @@
+/* General styles */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f0;
+  color: #444;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  color: #ff66b2;
+  text-shadow: 1px 1px #fff;
+}
+
+/* Button */
+button {
+  background-color: #ffb6c1;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff69b4;
+}
+
+/* Gallery layout */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Cat images */
+#gallery img {
+  width: 240px;
+  height: auto;
+  border-radius: 20px;
+  border: 4px solid #ffb6c1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+footer a {
+  color: #ff66b2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
